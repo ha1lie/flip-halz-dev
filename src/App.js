@@ -87,7 +87,7 @@ class App extends Component {
               </Box>
             </Box>
             <Box background='appBarBackground' justify='center' align='center' height ='60pt'> { /* Footer to go back to my website */}
-              <Anchor color='appBarTextColor' label='[ Go To My Portfolio ]' />
+              <Anchor href='https://hey.halz.dev/' color='appBarTextColor' label='[ Go To My Portfolio ]' />
             </Box>
           </Box>
         </Router>
