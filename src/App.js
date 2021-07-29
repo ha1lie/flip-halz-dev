@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Box, Grommet, Header, Text } from 'grommet';
+import { Anchor, Box, Grommet, Header, Text } from 'grommet';
 import AppBar from './components/AppBar';
 import UnknownPage from './UnknownPage';
 import PrivacyPage from './PrivacyPage';
@@ -25,22 +25,19 @@ const theme = {
       },
     },
     colors: {
-      background: 'eppeline',
+      background: 'appBarTextColor',
       placeholder: 'offwhite',
       border: 'white',
-      appBarBackgroundDark: 'charcoal',
-      appBarBackgroundLight: 'offwhite',
-      appBarTextColorDark: 'offwhite',
-      appBarTextColorLight: 'charcoal',
-      appBarTextColor: 'appBarTextColorDark',
-      appBarBackground: 'appBarBackgroundDark',
+      appBarTextColor: 'offwhite',
+      appBarBackground: 'charcoal',
       violetPurple: '#7C77B9',
-      rubyPink: '#D81159',
-      polishedPine: '#439A86',
-      offwhite: '#FBFEF9',
-      charcoal: '#2C2C34',
+      rubyPink: '#F15156',
+      polishedPine: '#C96480',
+      offwhite: '#F3DFBF',
+      charcoal: '#423B0B',
       nearBlack: '#17171A',
       eppeline: '#F7F1ED',
+      linkColor: '#266DD3',
       offlineColor: '#0A2463',
       onlineColor: '#44FFD1',
       idleColor: '#FFE66D',
@@ -69,10 +66,10 @@ class App extends Component {
     return (
       <Grommet theme={ theme }>
         <Router>
-          <Box flex='grow' direction='column' pad={{ bottom: '100pt'}} >
+          <Box flex='grow' direction='column'>
             <AppBar />
             <Box margin={{ top: '60px' }} >
-              <Box flex='grow' margin='medium' >
+              <Box flex='grow' >
                 <Switch>
                   <Route path='/contact' exact>
                     <ContactPage />
@@ -88,6 +85,9 @@ class App extends Component {
                   </Route>
                 </Switch>
               </Box>
+            </Box>
+            <Box background='appBarBackground' justify='center' align='center' height ='60pt'> { /* Footer to go back to my website */}
+              <Anchor color='appBarTextColor' label='[ Go To My Portfolio ]' />
             </Box>
           </Box>
         </Router>

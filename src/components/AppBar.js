@@ -38,7 +38,7 @@ class AppBar extends Component {
               </Anchor>
             </Box>
             {(size === 'small') ? (
-                <Button icon={ <Menu /> } onClick={ () => { this.setState({ showMobileContainer: true }) } } />
+                <Button icon={ <Menu color='appBarTextColor' /> } onClick={ () => { this.setState({ showMobileContainer: true }) } } />
             ) : (
                 <Box direction='row' pad='horizontal'>
                 <Anchor color='appBarTextColor' label='Contact' margin={{left: 'small'}} href='/contact' />
@@ -54,7 +54,7 @@ class AppBar extends Component {
                         <Box direction='row' align='center' gap='8px'>
                           <Heading level='2' margin='none' color='appBarTextColor'>Flip</Heading>
                         </Box>
-                        <Button plain icon={ <FormClose size='large' /> } onClick={ () => { this.setState({ showMobileContainer: false }) } } />
+                        <Button plain icon={ <FormClose color='appBarTextColor' size='large' /> } onClick={ () => { this.setState({ showMobileContainer: false }) } } />
                       </Box>
                     </Box>
                     <Box direction='column' align='center'>
@@ -66,8 +66,8 @@ class AppBar extends Component {
                       </Anchor>
                     </Box>
                     <Box fill='horizontal' direction='row' pad={{ horizontal: 'large', vertical: 'small'}} align='center' justify='center' gap='36px'>
-                      <Anchor color='appBarTextColor' icon={ <Box align='center'><Github size='large' /><Text>@ha1lie</Text></Box> } href='https://github.com/ha1lie' target='_blank' />
-                      <Anchor color='appBarTextColor' icon={ <Box align='center'><Twitter size='large' /><Text>@h4l1ie</Text></Box> } href='https://twitter.com/h4l1ie' target='_blank' />
+                      <Anchor color='appBarTextColor' icon={ <Box align='center'><Github color='appBarTextColor' size='large' /><Text>@ha1lie</Text></Box> } href='https://github.com/ha1lie' target='_blank' />
+                      <Anchor color='appBarTextColor' icon={ <Box align='center'><Twitter color='appBarTextColor' size='large' /><Text>@h4l1ie</Text></Box> } href='https://twitter.com/h4l1ie' target='_blank' />
                     </Box>
                   </Box>
               </Layer>

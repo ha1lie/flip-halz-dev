@@ -3,8 +3,8 @@ import { Box, Text, Anchor, Heading, Paragraph } from 'grommet';
 
 function PrivacyPage() {
   return (
-    <Box flex='grow' fill='vertical' align='center' gap='medium' justify='start' style={{ minHeight: 'calc(100vh - 165pt)' }} >
-      <Text weight='700' size='300%' textAlign='center' >Quick Flip Privacy Policy</Text>
+    <Box pad='medium' flex='grow' fill='vertical' align='center' gap='medium' justify='start' style={{ minHeight: 'calc(100vh - 65pt)' }} >
+      <Text color='appBarBackground' weight='700' size='300%' textAlign='center' >Quick Flip Privacy Policy</Text>
       <Box align='center' justify='start'>
         <Text color='appBarBackground' weight='700' size='200%' textAlign='center' >What information do you collect?</Text>
         <Text color='appBarBackground'>Nothing. Flip doesn't even need the internet.</Text>
